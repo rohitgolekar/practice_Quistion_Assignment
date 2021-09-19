@@ -29,12 +29,13 @@
     </div>
     <script>
         //---- Quistion 1 -----//
-        const Array = [7, 5, 8, 4, 2];
+        const Array = [3, 4, 9, 5, 8, 4, 2, 7, 5, 8];
+        const unique = [...new Set(Array)];
         function findFirstUnique(arr){
             document.getElementById('output1').innerText = `The first unique element in the array ${arr[0]}`;
         }
 
-        findFirstUnique(Array);
+        findFirstUnique(unique);
        
         //---- Quistion 2 -----//
         const Array1 = [1, 2, 3, 4, 5];
