@@ -25,8 +25,8 @@
                         <h6 class="text-dark text-uppercase">Unique Number</h6>
                     </div>
                     <div class="card-body bg-danger">
-                        <h6 class="text-white">Enter value in number with space or quomma</h6>
-                        <input type="text" id="inputval" class="form-control text-center" placeholder="Enter Value in number with space or quomma">
+                        <h6 class="text-white">Enter value in number with space or commas</h6>
+                        <input type="text" id="inputval" class="form-control text-center" placeholder="Enter value in number with space or commas">
                         <button id="submit" class="btn btn-warning my-2" onclick="clickme()">Submit</button>
                         <p class="text-white" id="output1"></p>   
                     </div>
@@ -39,8 +39,8 @@
                         <h6 class="text-dark text-uppercase">Rotate Array</h6>
                     </div>
                     <div class="card-body bg-success">
-                        <h6 class="text-white my-2">Enter set of oalue in number with space</h6>
-                        <input type="text" id="inputval1" class="form-control text-center" placeholder="Enter Set Of Value">
+                        <h6 class="text-white my-2">Enter set of value in number with space</h6>
+                        <input type="text" id="inputval1" class="form-control text-center" placeholder="Enter set of value in number with space">
                         
                         <h6 class="text-white my-2">Enter value from rotate</h6>
                         <input type="text" id="inputval2" class="form-control text-center" placeholder="Enter Value From Rotate">
@@ -85,14 +85,12 @@
                 let inputval1 = document.getElementById('inputval1').value;
                 let newval1 = inputval1.split('');
                 let inputval2 = document.getElementById('inputval2').value;
-                // console.log(newval1); 
                 rotate(newval1, inputval2);
             }
             
 
             function rotate(newval1,inputval2)
                 {
-                    debugger;
                     console.log(newval1);
                 const index=newval1.indexOf(inputval2);
                 const sliced=newval1.splice(index,newval1.length);
